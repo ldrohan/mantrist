@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   		put "like", to: "pins#upvote"
   	end	
   end
-  
+  get 'profile', to: 'pins#profile'
   root "pins#index"
 end
