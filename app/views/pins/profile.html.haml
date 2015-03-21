@@ -1,4 +1,4 @@
-%h1= current_user.email.capitalize 
+%h1= "#{current_user.name}'s Profile"
 #pins.transitions-enabled
 	- @pins.each do |pin|
 		.box.panel.panel-default
