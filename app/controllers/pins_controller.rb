@@ -45,7 +45,7 @@ class PinsController < ApplicationController
 	end
 
 	def profile
-		@pins = current_user.pins
+		@pins = current_user.pins.order("created_at DESC")
 	end	
 
 
